@@ -3,10 +3,18 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns:local="clr-namespace:WPFPractice"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="1000">
-    <Grid>
+        Title="Matt's Window" Height="450" Width="1000" ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight" Topmost="False" WindowState="Normal"
+        Icon="./Resources/Dapino-Summer-Holiday-Palm-tree.ico" MouseMove="Window_MouseMove">
+    <Window.Resources>
+        <sys:String x:Key="strHelloAgain">Hello Again</sys:String>
+    </Window.Resources>
+    <StackPanel Orientation="Vertical">
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Hello World" VerticalAlignment="Top" FontSize="40"></TextBlock>
         
-    </Grid>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="{StaticResource strHelloAgain}" VerticalAlignment="Top" FontSize="40"></TextBlock>
+    </StackPanel>
 </Window>
