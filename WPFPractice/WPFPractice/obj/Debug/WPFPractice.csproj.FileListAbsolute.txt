@@ -1,0 +1,14 @@
+D:\Documents\Code\WPFPractice\WPFPractice\WPFPractice\bin\Debug\WPFPractice.exe.config
+D:\Documents\Code\WPFPractice\WPFPractice\WPFPractice\bin\Debug\WPFPractice.exe
+D:\Documents\Code\WPFPractice\WPFPractice\WPFPractice\bin\Debug\WPFPractice.pdb
+D:\Documents\Code\WPFPractice\WPFPractice\WPFPractice\obj\Debug\WPFPractice.csprojAssemblyReference.cache
+D:\Documents\Code\WPFPractice\WPFPractice\WPFPractice\obj\Debug\MainWindow.g.cs
+D:\Documents\Code\WPFPractice\WPFPractice\WPFPractice\obj\Debug\App.g.cs
+D:\Documents\Code\WPFPractice\WPFPractice\WPFPractice\obj\Debug\WPFPractice_MarkupCompile.cache
+D:\Documents\Code\WPFPractice\WPFPractice\WPFPractice\obj\Debug\WPFPractice_MarkupCompile.lref
+D:\Documents\Code\WPFPractice\WPFPractice\WPFPractice\obj\Debug\MainWindow.baml
+D:\Documents\Code\WPFPractice\WPFPractice\WPFPractice\obj\Debug\WPFPractice.g.resources
+D:\Documents\Code\WPFPractice\WPFPractice\WPFPractice\obj\Debug\WPFPractice.Properties.Resources.resources
+D:\Documents\Code\WPFPractice\WPFPractice\WPFPractice\obj\Debug\WPFPractice.csproj.GenerateResource.cache
+D:\Documents\Code\WPFPractice\WPFPractice\WPFPractice\obj\Debug\WPFPractice.exe
+D:\Documents\Code\WPFPractice\WPFPractice\WPFPractice\obj\Debug\WPFPractice.pdb

@@ -23,6 +23,13 @@ namespace WPFPractice
         public MainWindow()
         {
             InitializeComponent();
+            this.Title = "New Title";
+            this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+        }
+
+        private void Window_MouseMove(object sender, MouseEventArgs e)
+        {
+            Title = e.GetPosition(this).ToString();
         }
     }
 }
