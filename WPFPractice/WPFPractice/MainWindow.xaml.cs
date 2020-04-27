@@ -20,16 +20,34 @@ namespace WPFPractice
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int cli = 0;
+        public static String Clicks {
+            get { return cli + ""; }
+        
+                
+                }
+
+       
         public MainWindow()
         {
             InitializeComponent();
             this.Title = "New Title";
             this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            
         }
 
         private void Window_MouseMove(object sender, MouseEventArgs e)
         {
             Title = e.GetPosition(this).ToString();
+        }
+
+        public static readonly DependencyProperty clickProperty =
+        DependencyProperty.Register("Clicks", typeof(string), typeof(Window), new PropertyMetadata(null));
+        private void Button1Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine(Clicks);
+            cli++;
+            
         }
     }
 }

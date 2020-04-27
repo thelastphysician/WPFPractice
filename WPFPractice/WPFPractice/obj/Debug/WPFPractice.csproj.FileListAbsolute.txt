@@ -12,3 +12,4 @@ D:\Documents\Code\WPFPractice\WPFPractice\WPFPractice\obj\Debug\WPFPractice.Prop
 D:\Documents\Code\WPFPractice\WPFPractice\WPFPractice\obj\Debug\WPFPractice.csproj.GenerateResource.cache
 D:\Documents\Code\WPFPractice\WPFPractice\WPFPractice\obj\Debug\WPFPractice.exe
 D:\Documents\Code\WPFPractice\WPFPractice\WPFPractice\obj\Debug\WPFPractice.pdb
+D:\Documents\Code\WPFPractice\WPFPractice\WPFPractice\obj\Debug\WPFPractice.csproj.CoreCompileInputs.cache
