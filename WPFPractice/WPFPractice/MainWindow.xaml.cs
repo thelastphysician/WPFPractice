@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
+using Microsoft.Win32;
+
 
 namespace WPFPractice
 {
@@ -20,13 +23,8 @@ namespace WPFPractice
     /// </summary>
     public partial class MainWindow : Window
     {
-        private int cli = 0;
-        public static String Clicks {
-            get { return cli + ""; }
+      
         
-                
-                }
-
        
         public MainWindow()
         {
@@ -41,13 +39,22 @@ namespace WPFPractice
             Title = e.GetPosition(this).ToString();
         }
 
-        public static readonly DependencyProperty clickProperty =
-        DependencyProperty.Register("Clicks", typeof(string), typeof(Window), new PropertyMetadata(null));
-        private void Button1Click(object sender, RoutedEventArgs e)
+        private void Button1_Click(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine(Clicks);
-            cli++;
-            
+            MessageBox.Show("The app is closing");
+            this.Close();
+        }
+
+        private void BTNOpenFile_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openDLG = new OpenFileDialog();
+            openDLG.ShowDialog();
+        }
+
+        private void BTNSaveFile_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog saveDLG = new SaveFileDialog();
+            saveDLG.ShowDialog();
         }
     }
 }
