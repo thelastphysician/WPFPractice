@@ -6,15 +6,41 @@
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns:local="clr-namespace:WPFPractice"
         mc:Ignorable="d"
-        Title="Matt's Window" Height="450" Width="1000" ResizeMode="NoResize"
-        SizeToContent="WidthAndHeight" Topmost="False" WindowState="Normal"
+        Title="Matt's Window" Height="453.782" Width="818.487" ResizeMode="NoResize"
+        SizeToContent="Manual" Topmost="False" WindowState="Normal"
         Icon="./Resources/Dapino-Summer-Holiday-Palm-tree.ico" MouseMove="Window_MouseMove">
     <Window.Resources>
         <sys:String x:Key="strHelloAgain">Hello Again</sys:String>
+        <sys:String x:Key="counter">0</sys:String>
+
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="120" />
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="FontSize" Value="30" />
+            <Setter Property="Background" Value="SlateGray"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="Crimson"/>
+        </Style>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="Cyan"/>
+            <Setter Property="Opacity" Value="90"/>
+
+        </Style>
     </Window.Resources>
     <StackPanel Orientation="Vertical">
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Hello World" VerticalAlignment="Top" FontSize="40"></TextBlock>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Hello World" VerticalAlignment="Top" FontSize="40" FontFamily="Impact"></TextBlock>
+
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="{StaticResource strHelloAgain}" VerticalAlignment="Top" FontSize="40" FontFamily="Rod"></TextBlock>
+
+        <Button x:Name="Button1" Height="40" Width="Auto" Content="Close Window" Margin="291,1"
+                Click="Button1_Click"></Button>
         
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="{StaticResource strHelloAgain}" VerticalAlignment="Top" FontSize="40"></TextBlock>
+        <Button x:Name="BTNOpenFile" Height="40" Width="Auto" Content="Open File" Margin="291,1"
+                Click="BTNOpenFile_Click"></Button>
+        
+        <Button x:Name="BTNSaveFile" Height="40" Width="Auto" Content="Save File" Margin="291,1"
+                Click="BTNSaveFile_Click"></Button>
+
     </StackPanel>
 </Window>
